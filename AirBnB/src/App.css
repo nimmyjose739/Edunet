@@ -1,0 +1,268 @@
+/* Header Margin */
+header {
+  margin-top: -10px;
+}
+
+/* Search Section Styling */
+.search-section {
+  background-color: #ffeef0; /* Light red background */
+  border: 1px solid #f8d7da; /* Light red border */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Vertically center items */
+  gap: 8px;
+
+}
+
+/* Heading Styling for Check-In, Check-Out, and Guests */
+.search-heading {
+  font-weight: bold;
+  color: #0f0e0e; /* Dark red color */
+  margin-bottom: 5px; /* Add some spacing below the label */
+}
+
+/* Columns in the search section */
+.search-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1; /* Ensures equal width for columns */
+  margin: 0 10px; /* Add spacing between columns */
+}
+
+/* Smaller Search Button Styling */
+.search-button {
+  background-color: #e63946;
+  color: white;
+  border-radius: 5px; /* Rounded corners */
+  padding: 6px 10px; /* Smaller padding */
+  font-size: 0.9rem; /* Smaller font size */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button fill column width */
+  max-width: 120px; /* Restrict button width */
+  margin-top: 30px;
+}
+
+/* Hover effect for search button */
+.search-button:hover {
+  background-color:  rgb(240, 240, 237)
+  cursor: pointer;
+}
+
+/* Search Icon (Optional if you add an icon) */
+.search-icon {
+  font-size: 1rem; /* Adjusted icon size */
+}
+
+/* Form Control Styling */
+.form-control {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 5px 10px; /* Adjust padding */
+  width: 100%; /* Ensure inputs take full column width */
+}
+
+/* Card Styling */
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:  rgb(240, 240, 237); /* Dark red color for the title */
+}
+
+.btn-primary {
+  background-color: rgb(240, 240, 237);
+  border: none;
+  border-radius: 8px;
+}
+
+.container {
+  padding-bottom: 0;
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes up the full height of the viewport */
+  margin: 0;    /* Remove any default margin */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Make the body a flex container */
+}
+
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Card Container */
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Card Image Styling */
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay for Title */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-image-container:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Card Title Styling */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+ /* booking details */
+
+.Booking-dtl-cont{
+   background-color: rgb(240, 240, 237);
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.Booking-dtl-cont h3 {
+  font-weight: bold;
+}
+
+.Booking-dtl-cont p {
+  color: #6c757d; /* Light text */
+}
+
+/* .amenity-box {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.amenity-box:hover {
+  background-color: #e9ecef;
+  border-color: #ccc;
+  cursor: pointer;
+}
+
+.amenity-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #007bff;
+} */
+
+.amenity-box {
+  width: 250px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.amenity-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e8f5e9;
+}
+
+.amenity-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.text-muted {
+  margin-bottom: 20px;
+  color: #666;
+}
+/* qna section */
+
+.qna-cnt{
+  margin-bottom: 100px;
+  display: flex;
+}
+
+
+.accordion-button {
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.accordion-button:hover {
+  background-color: #e0f7fa;
+}
+
+.accordion-body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
